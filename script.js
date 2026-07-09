@@ -3,6 +3,7 @@ const signupForms = document.querySelectorAll("[data-signup-form], #signup-form"
 const menuToggle = document.querySelector(".mobile-menu-toggle");
 const primaryNav = document.querySelector("#primary-nav");
 const dropdowns = document.querySelectorAll(".nav-dropdown");
+const navLinks = document.querySelectorAll("#primary-nav a");
 
 for (const yearElement of yearElements) {
   yearElement.textContent = new Date().getFullYear();
@@ -29,6 +30,20 @@ for (const signupForm of signupForms) {
     signupForm.reset();
   });
 }
+
+const closeMobileMenu = () => {
+  if (menuToggle && primaryNav) {
+    primaryNav.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  }
+};
+
+const closeDropdowns = () => {
+  for (const dropdown of dropdowns) {
+    dropdown.classList.remove("is-open");
+    dropdown.querySelector(".dropdown-toggle")?.setAttribute("aria-expanded", "false");
+  }
+};
 
 if (menuToggle && primaryNav) {
   menuToggle.addEventListener("click", () => {
@@ -57,9 +72,20 @@ document.addEventListener("click", (event) => {
   }
 
   if (!target.closest(".nav-dropdown")) {
-    for (const dropdown of dropdowns) {
-      dropdown.classList.remove("is-open");
-      dropdown.querySelector(".dropdown-toggle")?.setAttribute("aria-expanded", "false");
-    }
+    closeDropdowns();
+  }
+});
+
+for (const link of navLinks) {
+  link.addEventListener("click", () => {
+    closeDropdowns();
+    closeMobileMenu();
+  });
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeDropdowns();
+    closeMobileMenu();
   }
 });

@@ -20,7 +20,7 @@ The main navigation is shared across pages:
 - About
 - Contact
 
-On desktop, the Collections dropdown opens on hover or click. On mobile, the navigation collapses behind a menu button and the Collections group expands inside the mobile menu.
+On desktop, the Collections dropdown opens on hover or click. On mobile, the navigation collapses behind a menu button and the Collections group expands inside the mobile menu. The Black Ink homepage remains `index.html`; Velvet Wreckage is intentionally kept as its own collection page.
 
 ## Style Direction
 
