@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Black Ink for general inquiries, collaborations, and collection questions." />
+  <title>Contact | Black Ink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-black-ink">
+  <header class="site-header" aria-label="Primary navigation">
+    <a class="brand-mark" href="index.html" aria-label="Black Ink home">
+      <span class="brand-sigil">BI</span>
+      <span>Black Ink</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span>Menu</span>
+    </button>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <div class="nav-dropdown">
+        <button class="dropdown-toggle" type="button" aria-expanded="false">Collections <span aria-hidden="true">▾</span></button>
+        <div class="dropdown-menu" aria-label="Collections submenu">
+          <a href="broken-memoirs.html">Broken Memoirs</a>
+          <a href="velvet-wreckage.html">Velvet Wreckage</a>
+        </div>
+      </div>
+      <a href="index.html#about">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero contact-hero">
+      <div class="script-watermark" aria-hidden="true">contact</div>
+      <div class="hero-content paper-panel">
+        <p class="eyebrow">Contact Black Ink</p>
+        <h1>Send a note.</h1>
+        <p class="hero-copy">
+          For general inquiries, collaborations, literary projects, collection questions, or quiet
+          professional correspondence.
+        </p>
+      </div>
+    </section>
+
+    <section class="section contact-card">
+      <p class="eyebrow">General inquiries</p>
+      <h2>We would love to hear from you.</h2>
+      <p>
+        Email:
+        <a class="text-link" href="mailto:hello@blackink.example">hello@blackink.example</a>
+      </p>
+      <div class="social-links" aria-label="Social links">
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.tiktok.com/">TikTok</a>
+        <a href="https://www.pinterest.com/">Pinterest</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Black Ink. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="broken-memoirs.html">Broken Memoirs</a>
+      <a href="velvet-wreckage.html">Velvet Wreckage</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

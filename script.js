@@ -1,24 +1,62 @@
 const yearElement = document.querySelector("#year");
-const signupForm = document.querySelector("#signup-form");
-const formNote = document.querySelector("#form-note");
+const menuToggle = document.querySelector(".menu-toggle");
+const primaryNavigation = document.querySelector("#primary-navigation");
+const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+const signupForms = document.querySelectorAll(".signup-form");
 
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
 
-if (signupForm && formNote) {
-  signupForm.addEventListener("submit", (event) => {
-    event.preventDefault();
+if (menuToggle && primaryNavigation) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = primaryNavigation.classList.toggle("is-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
 
-    const formData = new FormData(signupForm);
-    const email = String(formData.get("email") || "").trim();
+dropdownToggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const dropdown = toggle.closest(".nav-dropdown");
 
-    if (!email) {
-      formNote.textContent = "Enter an email to receive the first signal.";
+    if (!dropdown) {
       return;
     }
 
-    formNote.textContent = "You are on the list. The first signal will find you.";
-    signupForm.reset();
+    const isOpen = dropdown.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
   });
-}
+});
+
+document.addEventListener("click", (event) => {
+  document.querySelectorAll(".nav-dropdown.is-open").forEach((dropdown) => {
+    if (!dropdown.contains(event.target)) {
+      dropdown.classList.remove("is-open");
+      dropdown.querySelector(".dropdown-toggle")?.setAttribute("aria-expanded", "false");
+    }
+  });
+});
+
+signupForms.forEach((form) => {
+  const note = form.querySelector(".form-note");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const email = String(formData.get("email") || "").trim();
+
+    if (!email) {
+      if (note) {
+        note.textContent = "Please enter an email address.";
+      }
+      return;
+    }
+
+    if (note) {
+      note.textContent = form.dataset.formMessage || "Thank you. You are on the list.";
+    }
+
+    form.reset();
+  });
+});
