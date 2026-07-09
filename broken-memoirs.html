@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Broken Memoirs is a Black Ink collection for healing, unsent letters, heartbreak, recovery, and handwritten emotional fragments."
+  />
+  <title>Broken Memoirs | Black Ink Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-memoirs">
+  <div class="site-shell ink-shell">
+    <header class="site-header ink-header" aria-label="Primary navigation">
+      <a class="brand-mark ink-brand" href="index.html" aria-label="Black Ink home">
+        <span class="brand-sigil ink-sigil">BI</span>
+        <span>Black Ink</span>
+      </a>
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links ink-nav" id="primary-nav" aria-label="Site sections">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" type="button" aria-expanded="false">
+            Collections
+            <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="broken-memoirs.html">Broken Memoirs</a>
+            <a href="velvet-wreckage.html">Velvet Wreckage</a>
+          </div>
+        </div>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="memoir-hero">
+        <div class="paper-note">
+          <p class="script-word">dear almost,</p>
+          <span></span>
+          <p>I kept what hurt. Then I made it readable.</p>
+        </div>
+        <div class="memoir-copy">
+          <p class="eyebrow ink-eyebrow">A Black Ink collection</p>
+          <h1>Broken Memoirs</h1>
+          <p>
+            Emotional memoir, unsent letters, heartbreak, healing, and recovery — written with charcoal ink on faded paper and finished with a quiet thread of muted gold.
+          </p>
+          <div class="hero-actions">
+            <a class="button ink-button-primary" href="#letters">Read the Fragments</a>
+            <a class="button ink-button-secondary" href="velvet-wreckage.html">Visit Velvet Wreckage</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="memoir-section" id="letters">
+        <div class="section-heading centered">
+          <p class="eyebrow ink-eyebrow">Unsent, but not unfinished</p>
+          <h2>For every page that helped you survive.</h2>
+          <p class="section-intro ink-intro">
+            Broken Memoirs is soft, literary, and intimate — a place for the words you never sent and the self you slowly returned to.
+          </p>
+        </div>
+        <div class="memoir-grid">
+          <article>
+            <p class="card-number">01</p>
+            <h3>Unsent Letters</h3>
+            <p>Confessions, closures, and almost-goodbyes with handwritten-note energy.</p>
+          </article>
+          <article>
+            <p class="card-number">02</p>
+            <h3>Recovery Pages</h3>
+            <p>Gentle fragments for rebuilding after heartbreak, grief, and emotional weather.</p>
+          </article>
+          <article>
+            <p class="card-number">03</p>
+            <h3>Charcoal Truths</h3>
+            <p>Plainspoken lines in dark ink: honest, spare, and quietly brave.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer ink-footer">
+      <p>© <span id="year"></span> Black Ink. Broken Memoirs collection.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="broken-memoirs.html">Broken Memoirs</a>
+        <a href="velvet-wreckage.html">Velvet Wreckage</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Contact Black Ink for collection inquiries, collaborations, publishing-house questions, and creative conversations."
+  />
+  <title>Contact | Black Ink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-ink">
+  <div class="site-shell ink-shell">
+    <header class="site-header ink-header" aria-label="Primary navigation">
+      <a class="brand-mark ink-brand" href="index.html" aria-label="Black Ink home">
+        <span class="brand-sigil ink-sigil">BI</span>
+        <span>Black Ink</span>
+      </a>
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links ink-nav" id="primary-nav" aria-label="Site sections">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" type="button" aria-expanded="false">
+            Collections
+            <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="broken-memoirs.html">Broken Memoirs</a>
+            <a href="velvet-wreckage.html">Velvet Wreckage</a>
+          </div>
+        </div>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-page">
+        <div class="contact-page-card">
+          <p class="eyebrow ink-eyebrow">Contact Black Ink</p>
+          <h1>Send a note to the house.</h1>
+          <p>
+            For collaborations, collection questions, publishing inquiries, and quiet creative conversations, reach out by email.
+          </p>
+          <a class="contact-link ink-contact-link" href="mailto:hello@blackinksolutions.com">hello@blackinksolutions.com</a>
+          <div class="social-links ink-social-links" aria-label="Social links">
+            <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+            <a href="https://www.tiktok.com/" aria-label="TikTok">TikTok</a>
+            <a href="https://www.pinterest.com/" aria-label="Pinterest">Pinterest</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer ink-footer">
+      <p>© <span id="year"></span> Black Ink. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="broken-memoirs.html">Broken Memoirs</a>
+        <a href="velvet-wreckage.html">Velvet Wreckage</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

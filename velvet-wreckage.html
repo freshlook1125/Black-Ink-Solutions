@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Velvet Wreckage is a dark luxury collection for elegant ruin, antique gold accents, mysterious collections, and emotionally charged design."
+  />
+  <title>Velvet Wreckage | Black Ink Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-wreckage">
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand-mark" href="index.html" aria-label="Black Ink home">
+        <span class="brand-sigil">BI</span>
+        <span>Black Ink</span>
+      </a>
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="primary-nav" aria-label="Site sections">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" type="button" aria-expanded="false">
+            Collections
+            <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="broken-memoirs.html">Broken Memoirs</a>
+            <a href="velvet-wreckage.html">Velvet Wreckage</a>
+          </div>
+        </div>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-frame" id="hero">
+        <div class="gold-dust gold-dust-one" aria-hidden="true"></div>
+        <div class="gold-dust gold-dust-two" aria-hidden="true"></div>
+        <div class="hero-content content-panel">
+          <p class="eyebrow">A Black Ink collection</p>
+          <h1>Velvet Wreckage</h1>
+          <p class="hero-copy">
+            A polished black sanctuary for soft ruin, antique light, and the quiet drama of everything that survives the fall.
+          </p>
+          <div class="hero-actions" aria-label="Hero calls to action">
+            <a class="button button-primary" href="#collections">Explore the Collection</a>
+            <a class="button button-secondary" href="#join">Join the List</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-padding" id="about-wreckage">
+        <div class="section-heading">
+          <p class="eyebrow">About Velvet Wreckage</p>
+          <h2>Elegance after impact.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="content-panel about-copy">
+            <p>
+              Velvet Wreckage lives in the tension between softness and damage: black silk against broken stone, gold dust over ash, tenderness held inside a sharp silhouette.
+            </p>
+            <p>
+              The collection is built for mysterious editorials, intimate objects, and fragments that feel discovered rather than displayed. Nothing shouts. Everything lingers.
+            </p>
+          </div>
+          <aside class="quote-card" aria-label="Collection statement">
+            <span class="quote-line"></span>
+            <blockquote>Luxury in the ruins. Beauty with a bruise.</blockquote>
+          </aside>
+        </div>
+      </section>
+
+      <section class="collections section-padding marble-section" id="collections">
+        <div class="section-heading centered">
+          <p class="eyebrow">Featured content</p>
+          <h2>Pieces from the dark room.</h2>
+          <p class="section-intro">
+            Four beginnings for a world of polished shadows, emotional artifacts, and quiet gold.
+          </p>
+        </div>
+        <div class="collection-grid">
+          <article class="collection-card">
+            <p class="card-number">01</p>
+            <h3>Noir Relics</h3>
+            <p>Recovered pieces for late nights, private rituals, and black-glass elegance.</p>
+          </article>
+          <article class="collection-card">
+            <p class="card-number">02</p>
+            <h3>Gold Dust Letters</h3>
+            <p>Fragments of confession, romance, and mystery finished with antique shimmer.</p>
+          </article>
+          <article class="collection-card">
+            <p class="card-number">03</p>
+            <h3>Marble Silence</h3>
+            <p>Minimal compositions inspired by veined stone, still rooms, and restrained desire.</p>
+          </article>
+          <article class="collection-card">
+            <p class="card-number">04</p>
+            <h3>The Afterglow</h3>
+            <p>Soft fallout, luminous details, and the warm trace left after everything changes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="signup section-padding" id="join">
+        <div class="signup-panel content-panel">
+          <div>
+            <p class="eyebrow">Enter the wreckage</p>
+            <h2>Receive the first signal.</h2>
+            <p>
+              Join the private list for collection notes, launch whispers, and dark-luxury dispatches.
+            </p>
+          </div>
+          <form class="signup-form" data-signup-form>
+            <label class="sr-only" for="wreckage-email">Email address</label>
+            <input id="wreckage-email" name="email" type="email" placeholder="your@email.com" required />
+            <button class="button button-primary" type="submit">Join</button>
+            <p class="form-note" data-form-note>No noise. Only rare signals.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Black Ink. Velvet Wreckage collection.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="broken-memoirs.html">Broken Memoirs</a>
+        <a href="velvet-wreckage.html">Velvet Wreckage</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
