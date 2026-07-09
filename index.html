@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Velvet Wreckage is a dark luxury destination for elegant ruin, antique gold accents, mysterious collections, and emotionally charged design."
+  />
+  <title>Velvet Wreckage | Dark Luxury in the Ruins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand-mark" href="#hero" aria-label="Velvet Wreckage home">
+        <span class="brand-sigil">VW</span>
+        <span>Velvet Wreckage</span>
+      </a>
+      <nav class="nav-links" aria-label="Site sections">
+        <a href="#about">About</a>
+        <a href="#collections">Collections</a>
+        <a href="#join">Join</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-frame" id="hero">
+        <div class="gold-dust gold-dust-one" aria-hidden="true"></div>
+        <div class="gold-dust gold-dust-two" aria-hidden="true"></div>
+        <div class="hero-content content-panel">
+          <p class="eyebrow">Dark luxury for the beautifully undone</p>
+          <h1>Velvet Wreckage</h1>
+          <p class="hero-copy">
+            A polished black sanctuary for soft ruin, antique light, and the quiet drama of everything that survives the fall.
+          </p>
+          <div class="hero-actions" aria-label="Hero calls to action">
+            <a class="button button-primary" href="#collections">Explore Collections</a>
+            <a class="button button-secondary" href="#join">Join the List</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-padding" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About Velvet Wreckage</p>
+          <h2>Elegance after impact.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="content-panel about-copy">
+            <p>
+              Velvet Wreckage lives in the tension between softness and damage: black silk against broken stone, gold dust over ash, tenderness held inside a sharp silhouette.
+            </p>
+            <p>
+              The brand is built for mysterious editorials, intimate collections, and objects that feel discovered rather than displayed. Nothing shouts. Everything lingers.
+            </p>
+          </div>
+          <aside class="quote-card" aria-label="Brand statement">
+            <span class="quote-line"></span>
+            <blockquote>Luxury in the ruins. Beauty with a bruise.</blockquote>
+          </aside>
+        </div>
+      </section>
+
+      <section class="collections section-padding marble-section" id="collections">
+        <div class="section-heading centered">
+          <p class="eyebrow">Featured content</p>
+          <h2>Collections from the dark room.</h2>
+          <p class="section-intro">
+            Four beginnings for a world of polished shadows, emotional artifacts, and quiet gold.
+          </p>
+        </div>
+        <div class="collection-grid">
+          <article class="collection-card">
+            <p class="card-number">01</p>
+            <h3>Noir Relics</h3>
+            <p>Recovered pieces for late nights, private rituals, and black-glass elegance.</p>
+          </article>
+          <article class="collection-card">
+            <p class="card-number">02</p>
+            <h3>Gold Dust Letters</h3>
+            <p>Fragments of confession, romance, and mystery finished with antique shimmer.</p>
+          </article>
+          <article class="collection-card">
+            <p class="card-number">03</p>
+            <h3>Marble Silence</h3>
+            <p>Minimal compositions inspired by veined stone, still rooms, and restrained desire.</p>
+          </article>
+          <article class="collection-card">
+            <p class="card-number">04</p>
+            <h3>The Afterglow</h3>
+            <p>Soft fallout, luminous details, and the warm trace left after everything changes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="signup section-padding" id="join">
+        <div class="signup-panel content-panel">
+          <div>
+            <p class="eyebrow">Enter the wreckage</p>
+            <h2>Receive the first signal.</h2>
+            <p>
+              Join the private list for collection notes, launch whispers, and dark-luxury dispatches.
+            </p>
+          </div>
+          <form class="signup-form" id="signup-form">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="your@email.com" required />
+            <button class="button button-primary" type="submit">Join</button>
+            <p class="form-note" id="form-note">No noise. Only rare signals.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact section-padding" id="contact">
+        <div class="contact-card">
+          <p class="eyebrow">Contact</p>
+          <h2>For collaborations, inquiries, and quiet transmissions.</h2>
+          <a class="contact-link" href="mailto:hello@velvetwreckage.com">hello@velvetwreckage.com</a>
+          <div class="social-links" aria-label="Social links">
+            <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+            <a href="https://www.tiktok.com/" aria-label="TikTok">TikTok</a>
+            <a href="https://www.pinterest.com/" aria-label="Pinterest">Pinterest</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Velvet Wreckage. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#collections">Collections</a>
+        <a href="#join">Join</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
