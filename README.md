@@ -1,32 +1,30 @@
-# Velvet Wreckage Website
+# Black Ink Website
 
-A responsive dark luxury landing page for **Velvet Wreckage**, built as a static website inside the existing repository.
+Black Ink is the main website and parent creative publishing-house brand for emotional collections, literary projects, digital products, and storytelling.
 
-## Sections
+## Site structure
 
-- Hero section
-- About Velvet Wreckage
-- Featured content / collections
-- Email signup call to action
-- Contact section
-- Footer
+- `index.html` — Black Ink homepage with hero, brand intro, collection previews, about section, join-list form, and footer.
+- `broken-memoirs.html` — Broken Memoirs collection page for unsent letters, heartbreak, attachment wounds, reflection, healing, and recovery.
+- `velvet-wreckage.html` — Velvet Wreckage collection page with a darker black-marble and antique-gold luxury tone.
+- `contact.html` — Black Ink contact page with general inquiry copy, placeholder email, and social links.
+- `styles.css` — Shared responsive styling for the Black Ink parent brand and both collection page themes.
+- `script.js` — Shared JavaScript for the desktop/mobile Collections dropdown, mobile menu, footer year, and email form success messages.
 
-## Style Direction
+## Navigation
 
-The design uses a flat black foundation with glossy black panels, black marble-inspired gradients, subtle gold dust, thin gold divider lines, antique gold accents, and clean text areas with no busy backgrounds behind readable content.
+The primary navigation keeps Black Ink as the parent site:
 
-## Files
+- Home
+- Collections
+  - Broken Memoirs
+  - Velvet Wreckage
+- About
+- Contact
 
-```text
-index.html   # Main page markup and section content
-styles.css   # Responsive dark luxury styling
-script.js    # Footer year and email signup placeholder behavior
-README.md    # Project notes
-```
+## Preview locally
 
-## Running Locally
-
-Open `index.html` directly in a browser, or serve the folder with any static server:
+Open `index.html` directly in a browser, or run a simple static server from the repository root:
 
 ```bash
 python3 -m http.server 8000
@@ -40,4 +38,4 @@ http://localhost:8000
 
 ## Notes
 
-The email signup form currently provides front-end placeholder behavior only. Connect it to a service such as Netlify Forms, Formspree, Mailchimp, ConvertKit, or a custom endpoint when a final email platform is selected.
+The email forms currently provide front-end placeholder success messages only. Connect them to an email platform or backend endpoint when the final list provider is selected.
